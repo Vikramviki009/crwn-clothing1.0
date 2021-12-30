@@ -14,6 +14,3 @@ export const addItemsToCart = (cartItems, cartItemToAdd) => {
     return [...cartItems, {...cartItemToAdd, quantity: 1}]
 };
 
-export const countCartItems = (cartItems) => (
-    cartItems.reduce((acc, item) => acc+item.quantity,1)
-);
