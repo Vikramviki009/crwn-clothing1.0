@@ -10,14 +10,6 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up
 import { setCurrentUser } from './redux/user/user.actions';
 
 class App extends React.Component {
-  constructor(){
-    super();
-
-    this.state = {
-      currentUser: null
-    }
-  };
-
   unSubscribeFromAuth = null;
 
   componentDidMount(){
